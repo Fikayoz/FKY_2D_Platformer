@@ -21,7 +21,7 @@ public class BrickBlock : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col){
 
 		// Check if the collision hit the bottom of the block
-		if (col.contacts [0].point.y < transform.position.y) {
+		if (col.contacts[0].point.y < transform.position.y) {
 
 			// Play sound
 			SoundManager.Instance.PlayOneShot (SoundManager.Instance.rockSmash);
